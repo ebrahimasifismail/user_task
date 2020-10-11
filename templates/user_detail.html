@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block breadcrumb %}
+    <li class="breadcrumb-item">Users</li>
+    <li class="breadcrumb-item active">{{ user.username }}</li>
+{% endblock %}
+
+{% block content %}
+    <h2 style="text-align:center">User Profile Card</h2>
+
+    <div class="card_profile">
+    <img src="https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png" alt="John" style="width:100%">
+    <h1>{{user.name}}</h1>
+    <p class="title">{{user.username}}</p>
+    <p>{{user.email}}</p>    
+    <div style="margin: 24px 0;">
+        <a href="#"><i class="fa fa-dribbble"></i></a> 
+        <a href="#"><i class="fa fa-twitter"></i></a>  
+        <a href="#"><i class="fa fa-linkedin"></i></a>  
+        <a href="#"><i class="fa fa-facebook"></i></a> 
+    </div>
+    <p><button>Contact</button></p>
+    </div>
+{% endblock %}
+

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <section class="jumbotron text-center">
+    <div class="container">
+      <h1>Users Website</h1>
+      <p class="lead text-muted">Get the Details of all Users here after Log In</p>
+      <p>
+        <a href="{% url 'login' %}" class="btn btn-primary my-2">Login</a>
+        <a href="{% url 'signup' %}" class="btn btn-secondary my-2">Sign Up</a>
+      </p>
+    </div>
+  </section>
+{% endblock %}
