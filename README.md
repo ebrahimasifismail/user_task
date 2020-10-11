@@ -8,7 +8,7 @@
 
 > source venv/bin/activate
 
-> cd funnel_bot
+> cd user_create_list/
 
 > pip install -r requirements.txt
 
